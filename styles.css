@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--very-pale-blue);
+  margin: 0 auto;
+}
+
+.hero-background {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center, 50%, 50%;
+  height: 50vh;
+}
+
+.container {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  width: 480px;
+  border-radius: 30px 30px;
+}
+
+.card-hero-illustration {
+  background-image: url(./images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  border-radius: 30px 30px 0 0;
+}
+
+.card-details {
+  text-align: center;
+  padding: 1rem 4rem;
+  border-radius: 0 0 30px 30px;
+}
+
+.card-details h2 {
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.card-details-price {
+  background: var(--very-pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  height: 10vh;
+}
+
+.icon-music {
+  background-image: url(./images/icon-music.svg);
+  background-size: 56px;
+  background-repeat: no-repeat;
+  background-position: center, 50%, 50%;
+  height: 56px;
+  width: 56px;
+}
+
+.price {
+  line-height: 1px;
+}
+
+.price p:first-child {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+.price p:last-child,
+p {
+  color: var(--desaturated-blue);
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+}
+
+button {
+  padding: 1.25em;
+  border-radius: 10px;
+  border: 0;
+  font-family: inherit;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+.btn-proceed {
+  background: var(--bright-blue);
+  color: var(--very-pale-blue);
+  margin-bottom: 0.5rem;
+  box-shadow: 0px 12px 10px 0px rgb(0 0 255 / 12%);
+}
+
+.btn-cancel {
+  background: none;
+  font-weight: 700;
+  color: var(--desaturated-blue);
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
